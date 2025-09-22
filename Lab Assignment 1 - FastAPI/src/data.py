@@ -2,17 +2,26 @@ import numpy as np
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 
+from sklearn.datasets import load_wine
+
 def load_data():
-    """
-    Load the Iris dataset and return the features and target values.
-    Returns:
-        X (numpy.ndarray): The features of the Iris dataset.
-        y (numpy.ndarray): The target values of the Iris dataset.
-    """
-    iris = load_iris()
-    X = iris.data
-    y = iris.target
+    wine = load_wine()
+    X = wine.data
+    y = wine.target
     return X, y
+
+
+# def load_data():
+#     """
+#     Load the Iris dataset and return the features and target values.
+#     Returns:
+#         X (numpy.ndarray): The features of the Iris dataset.
+#         y (numpy.ndarray): The target values of the Iris dataset.
+#     """
+#     iris = load_iris()
+#     X = iris.data
+#     y = iris.target
+#     return X, y
 
 def split_data(X, y):
     """
