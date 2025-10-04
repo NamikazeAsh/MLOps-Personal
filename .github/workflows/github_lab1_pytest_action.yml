@@ -8,8 +8,6 @@ on:
       - 'releases/**'
     paths:
       - 'Lab Assignment 2 - Github/**'
-    branches-ignore:
-      - dev
 
   pull_request:
     paths:
