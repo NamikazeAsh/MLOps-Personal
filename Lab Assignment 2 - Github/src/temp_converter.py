@@ -13,6 +13,7 @@ def to_celsius(fahrenheit):
     return (fahrenheit - 32) * 5 / 9
 
 
+
 def to_fahrenheit(celsius):
     """
     Converts temperature from Celsius to Fahrenheit.
@@ -41,3 +42,5 @@ def avg_temperature(temps):
     if not all(isinstance(t, (int, float)) for t in temps):
         raise ValueError("All elements must be numbers.")
     return sum(temps) / len(temps)
+
+print(avg_temperature((100,120)))
