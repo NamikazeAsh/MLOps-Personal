@@ -19,5 +19,5 @@ def test_avg_temp_converter():
     assert temp_converter.avg_temperature([0, 10, 20]) == 10
     assert round(temp_converter.avg_temperature([32, 212]), 1) == 122.0
     with pytest.raises(ValueError):
-        temp_converter.avg_temperature([30, "hot", 50])
+        temp_converter.avg_temperature([30, "hot", 51])
     
